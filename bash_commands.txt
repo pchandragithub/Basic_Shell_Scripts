@@ -1,0 +1,39 @@
+
+echo			:	to print anything on screen
+
+read varname		:       to read user input into a variable
+
+&{varname}		:       to print variable value
+
+#!/bin/bash		:       always use at the top
+
+sleep(seconds)		:       to put a pause in code for specified seconds
+
+$1.. $n			:	to give arguments to a script e.g script.sh Raju i.e Raju here is sent as an agrument to script.sh
+				first agrument can be echoed as $1 and so on.
+
+if [[condition]]then    :       if else condition in bash .if else condition end with fi
+echo " "
+else
+echo " "
+
+if [[ condition ]]then  :        if - elseif - else  condition in shell script
+echo " "
+elif [[ condition ]]then
+echo " "
+else 
+echo 
+
+
+for((i=0;i<10;i++))     :       for loop to print values of i
+do
+echo $i
+done
+
+for files in *          :       for loop to print all files in current folder i.e * means all files  we can specify extension with *.txt
+do
+echo $files
+done
+
+
+touch file{1..5}.txt    :       used to create multiple files at same time
